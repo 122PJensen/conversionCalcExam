@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <title>Exam Calculator of Conversion</title>
+
+    <style>
+      body {
+        text-align: center;
+      }
+
+      P {
+        font-size: 30px;
+      }
+
+      #fontFamily {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+
+      #secondfontFamily {
+        font-family: cursive;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="secondfontFamily">Conversion Calculator</h1>
+
+    <p id="fontFamily">Conversion Calculator for Exam</p>
+    <p>
+      <input
+        id="feetAmount"
+        type="number"
+        placeholder="Feet"
+        oninput="lengthConverter(this.value)"
+        onchange="lengthConverter(this.value)"
+      />
+      <label>Feet</label>
+    </p>
+    <p>Meters: <span id="outputMeters"></span></p>
+  </br>
+</br>
+<p>
+    <input
+      id="feetAmount"
+      type="number"
+      placeholder="Feet"
+      oninput="lengthConverter(this.value)"
+      onchange="lengthConverter(this.value)"
+    />
+    <label>Feet</label>
+  </p>
+    <p>Centimeters: <span id="outputCentimeters"></span></p>
+</br>
+</br>
+<p>
+    <input
+      id="feetAmount"
+      type="number"
+      placeholder="Feet"
+      oninput="lengthConverter(this.value)"
+      onchange="lengthConverter(this.value)"
+    />
+    <label>Feet</label>
+  </p>
+    <p>Kilometers: <span id="outputKilometers"></span></p>
+
+
+
+
+
+
+
+
+    <script>
+      function lengthConverter(valNum) {
+        document.getElementById("outputMeters").innerHTML = valNum / 0.0022046;
+      }
+
+
+
+      function lengthConverter(cmLength) {
+        document.getElementById("outputCentimeters").innerHTML = cmLength / 0.032808;
+      }
+
+
+
+
+      function lengthConverter(kmLength) {
+        document.getElementById("outputKilometers").innerHTML = kmLength / 3280.8;
+      }
+
+      src =
+        "https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js";
+      integrity =
+        "sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4";
+      crossorigin = "anonymous";
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
